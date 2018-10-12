@@ -10,10 +10,11 @@ namespace A.Задача_отборочные_2016г._
     {
         static void Main(string[] args)
         {
-             int s = Convert.ToInt32(Console.ReadLine());
-             int v1 = Convert.ToInt32(Console.ReadLine());
-             int v2 = Convert.ToInt32(Console.ReadLine());
-            Console.WriteLine("Кол-во секунд" + " " + s / ((v1 + v2) / 3.6));
+            string[] num = Console.ReadLine().Split(' ');
+            double s = double.Parse(num[0]);
+            double v1 = double.Parse(num[1]);
+            double v2 = double.Parse(num[2]);
+            Console.WriteLine(s / ((v1 + v2) / 3.6));
             Console.ReadLine();
         }
     }
